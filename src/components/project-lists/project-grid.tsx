@@ -39,16 +39,15 @@ const cards = [
       link: "#",
       githubLink: "#"
    },
-   // {
-   //    id: 3,
-   //    className: "col-span-1",
-   //    thumbnail:
-   //       "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-   //    title: "House in the woods",
-   //    descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
-   //    link: "#",
-   //    githubLink: "#"
-   // },
+   {
+      id: 3,
+      className: "col-span-1",
+      thumbnail: "/projects/ecommerce-filter.png",
+      title: "Ecommerce Product Filter",
+      descriptions: "Product Filter is an eCommerce product filtering website built using Next.js. The project focuses on providing a smooth user experience for browsing and filtering products by categories, price range, ratings, and more. It showcases dynamic rendering, optimized performance, and client-side state management. The site is fully responsive and demonstrates modern front-end architecture with reusable components and clean UI/UX.",
+      link: "https://ecommerce-shop-page.vercel.app/",
+      githubLink: "https://github.com/arup-maity/shop-page"
+   },
    // {
    //    id: 4,
    //    className: "md:col-span-2",
