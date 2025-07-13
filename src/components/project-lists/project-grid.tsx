@@ -32,12 +32,11 @@ const cards = [
    {
       id: 2,
       className: "col-span-1",
-      thumbnail:
-         "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "House in the woods",
-      descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
-      link: "#",
-      githubLink: "#"
+      thumbnail: "/projects/cloud-wings.png",
+      title: "Cloud Wings",
+      descriptions: "Cloud Wings is a full-stack flight booking platform developed using Next.js for the frontend, Node.js for the backend, and PostgreSQL as the database. The platform allows users to search for flights, view schedules, and complete bookings with real-time data handling. It showcases a seamless user experience with optimized routing, responsive design, and a scalable backend architecture.",
+      link: "https://cloudwings.arupmaity.in",
+      githubLink: "https://github.com/arup-maity/flight-booking"
    },
    {
       id: 3,
