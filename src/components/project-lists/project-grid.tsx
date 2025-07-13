@@ -23,12 +23,11 @@ const cards = [
    {
       id: 1,
       className: "md:col-span-2",
-      thumbnail:
-         "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "House in the woods",
-      descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
-      link: "#",
-      githubLink: "#"
+      thumbnail: "/projects/flovour-haven.png",
+      title: "Flovour Haven",
+      descriptions: "Flavour Haven is a full-stack restaurant website built using Next.js, Node.js, and PostgreSQL. The platform allows users to browse the restaurant menu, place online food orders, and manage their cart. It features a dynamic and responsive UI built with Next.js, a RESTful API powered by Node.js, and secure data storage using a PostgreSQL database. The project demonstrates end-to-end implementation of modern web technologies for a real-world food ordering experience.",
+      link: "https://flavour-haven.arupmaity.in",
+      githubLink: "https://github.com/arup-maity/flavour-haven-frontend"
    },
    {
       id: 2,
@@ -40,26 +39,26 @@ const cards = [
       link: "#",
       githubLink: "#"
    },
-   {
-      id: 3,
-      className: "col-span-1",
-      thumbnail:
-         "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "House in the woods",
-      descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
-      link: "#",
-      githubLink: "#"
-   },
-   {
-      id: 4,
-      className: "md:col-span-2",
-      thumbnail:
-         "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      title: "House in the woods",
-      descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
-      link: "#",
-      githubLink: "#"
-   },
+   // {
+   //    id: 3,
+   //    className: "col-span-1",
+   //    thumbnail:
+   //       "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+   //    title: "House in the woods",
+   //    descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
+   //    link: "#",
+   //    githubLink: "#"
+   // },
+   // {
+   //    id: 4,
+   //    className: "md:col-span-2",
+   //    thumbnail:
+   //       "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+   //    title: "House in the woods",
+   //    descriptions: "A showcase of my personal projects built to solve real-world problems, explore new technologies, and refine my development skills. These projects reflect my passion for full-stack development, clean code, and user-focused design.",
+   //    link: "#",
+   //    githubLink: "#"
+   // },
 ];
 
 type Card = {

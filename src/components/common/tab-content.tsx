@@ -24,11 +24,11 @@ const boxVariants = {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: {
-         type: "spring",
-         stiffness: 300,
-         damping: 30
-      }
+      // transition: {
+      //    type: "spring",
+      //    stiffness: 300,
+      //    damping: 30
+      // }
    }
 };
 

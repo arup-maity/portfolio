@@ -34,7 +34,7 @@ const HeroSections = () => {
                <div className="text-black flex flex-col justify-center max-md:pt-20">
                   <h1 className="text-4xl md:text-6xl leading-tight font-lato font-bold uppercase mb-3">HI, I&apos;M ARUP!</h1>
                   <h2 className="text-xl md:text-4xl xl:text-5xl leading-tight font-lato font-bold uppercase mb-8">
-                     Creative <span className="text-theme-color">{text}</span>
+                     Creative <span className="text-[#577BFF]">{text}</span>
                   </h2>
                   <p className="text-base font-lato font-medium text-[#a2a2a2] break-normal mb-10 md:mb-20">
                      I&apos;m a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I
@@ -43,22 +43,22 @@ const HeroSections = () => {
                   <div className="text-black">
                      <p className="text-base font-medium text-theme-black opacity-60 mb-4 tracking-widest">BEST SKILL ON</p>
                      <ul className="flex flex-wrap gap-4">
-                        <li className="inline-flex w-14 h-14 justify-center bg-[#EAEEFF] hover:bg-theme-color rounded-full">
+                        <li className="inline-flex w-14 h-14 justify-center bg-[#EAEEFF] hover:bg-[#577BFF] rounded-full">
                            <Image src="/react.svg" width={30} height={30} alt="webx" />
                         </li>
-                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-theme-color rounded-full">
+                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-[#577BFF] rounded-full">
                            <Image src="/next.svg" width={35} height={35} alt="webx" />
                         </li>
-                        <li className="inline-flex w-14 h-14 justify-center bg-[#EAEEFF] hover:bg-theme-color rounded-full">
+                        <li className="inline-flex w-14 h-14 justify-center bg-[#EAEEFF] hover:bg-[#577BFF] rounded-full">
                            <Image src="/tailwind.svg" width={35} height={35} alt="webx" />
                         </li>
-                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-theme-color rounded-full">
+                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-[#577BFF] rounded-full">
                            <Image src="/nodejs.svg" width={30} height={30} alt="webx" />
                         </li>
-                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-theme-color rounded-full">
+                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-[#577BFF] rounded-full">
                            <Image src="/postgresql.svg" width={30} height={30} alt="" />
                         </li>
-                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-theme-color rounded-full">
+                        <li className="inline-flex w-14 h-14 justify-center items-center bg-[#EAEEFF] hover:bg-[#577BFF] rounded-full">
                            <Image src="/mongodb.svg" width={40} height={40} alt="" />
                         </li>
                      </ul>

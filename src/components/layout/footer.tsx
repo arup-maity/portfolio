@@ -7,16 +7,16 @@ const PortfoiloFooter = () => {
          <div className="pt-10 pb-6">
             <ul className="flex flex-wrap justify-center">
                <li className="tracking-[1px]">
-                  <Link href='/' className="text-theme-black hover:text-theme-color text-lg font-lato font-semibold py-2 px-4">About</Link>
+                  <Link href='/' className="text-theme-black hover:text-[#577BFF] text-lg font-lato font-semibold py-2 px-4">About</Link>
                </li>
                <li className="tracking-[1px]">
-                  <Link href='/' className="text-theme-black hover:text-theme-color text-lg font-lato font-semibold py-2 px-4">Services</Link>
+                  <Link href='/' className="text-theme-black hover:text-[#577BFF] text-lg font-lato font-semibold py-2 px-4">Services</Link>
                </li>
                <li className="tracking-[1px]">
-                  <Link href='/' className="text-theme-black hover:text-theme-color text-lg font-lato font-semibold py-2 px-4">Blog</Link>
+                  <Link href='/' className="text-theme-black hover:text-[#577BFF] text-lg font-lato font-semibold py-2 px-4">Blog</Link>
                </li>
                <li className="tracking-[1px]">
-                  <Link href='/' className="text-theme-black hover:text-theme-color text-lg font-lato font-semibold py-2 px-4">Contact</Link>
+                  <Link href='/' className="text-theme-black hover:text-[#577BFF] text-lg font-lato font-semibold py-2 px-4">Contact</Link>
                </li>
             </ul>
             <div className="text-center py-4">

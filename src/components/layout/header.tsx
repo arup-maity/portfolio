@@ -40,7 +40,7 @@ const PortfoiloHeader = () => {
                      </ul>
                   </div>
                   <div className="flex items-center">
-                     <Link href='/' className="inline-flex items-center gap-1 bg-theme-color text-white text-base lg:text-lg font-lato font-medium tracking-wider leading-7 rounded-[30px] py-2 px-5 lg:py-3 lg:px-8">Download CV <GoArrowUpRight size={25} /></Link>
+                     <Link href='/' className="inline-flex items-center gap-1 bg-[#577BFF] text-white text-base lg:text-lg font-lato font-medium tracking-wider leading-7 rounded-[30px] py-2 px-5 lg:py-3 lg:px-8">Download CV <GoArrowUpRight size={25} /></Link>
                   </div>
                </div>
             </div>
