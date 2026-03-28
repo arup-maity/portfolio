@@ -1,7 +1,6 @@
-
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { cn } from '@/lib/utils';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 interface Tab {
    id: string;
@@ -19,7 +18,7 @@ interface AnimatedTabsProps {
 const AnimatedTabs = ({ tabs, defaultTab, className }: AnimatedTabsProps) => {
    const [activeTab, setActiveTab] = useState(defaultTab || tabs[0]?.id);
 
-   const activeTabData = tabs.find(tab => tab.id === activeTab);
+   const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
    return (
       <div className={cn("w-full  mx-auto", className)}>
@@ -35,9 +34,8 @@ const AnimatedTabs = ({ tabs, defaultTab, className }: AnimatedTabsProps) => {
                         "focus:outline-none",
                         activeTab === tab.id
                            ? "text-blue-600 dark:text-blue-400"
-                           : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200"
-                     )}
-                  >
+                           : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200",
+                     )}>
                      {/* Active tab background */}
                      {activeTab === tab.id && (
                         <motion.div
@@ -47,7 +45,7 @@ const AnimatedTabs = ({ tabs, defaultTab, className }: AnimatedTabsProps) => {
                            transition={{
                               type: "spring",
                               stiffness: 800,
-                              damping: 50
+                              damping: 50,
                            }}
                         />
                      )}
@@ -80,10 +78,9 @@ const AnimatedTabs = ({ tabs, defaultTab, className }: AnimatedTabsProps) => {
                   transition={{
                      type: "spring",
                      stiffness: 800,
-                     damping: 50
+                     damping: 50,
                   }}
-                  className=""
-               >
+                  className="">
                   {activeTabData?.content}
                </motion.div>
             </AnimatePresence>

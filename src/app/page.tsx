@@ -6,8 +6,6 @@ import PortfoiloHeader from "@/components/layout/header";
 import ProjectGrid from "@/components/project-lists/project-grid";
 
 export default function Home() {
-
-
    return (
       <>
          <PortfoiloHeader />
