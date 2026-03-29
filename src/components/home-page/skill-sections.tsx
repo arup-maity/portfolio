@@ -32,7 +32,7 @@ const SkillSeactions = () => {
       },
    ];
    return (
-      <div className="container-webx !py-20">
+      <div id="skills" className="container-webx !py-20">
          <div className="mb-5">
             <h2 className="relative text-2xl md:text-4xl font-semibold text-center mb-4">My skills</h2>
             <p className="w-11/12 lg:w-7/12 text-[15px] text-center mx-auto">
