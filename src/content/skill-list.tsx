@@ -70,6 +70,13 @@ export const skillList: Skill[] = [
       showIn: ["all", "backend"],
    },
    {
+      icon: "/skill/redis.svg",
+      title: "Redis",
+      description:
+         "High-performance in-memory data store and caching solution. I use Redis for caching, session management, real-time data processing, pub/sub messaging, and as a message queue to enhance application performance and scalability.",
+      showIn: ["backend"],
+   },
+   {
       icon: "/skill/mongodb.png",
       title: "Mongodb",
       description:
