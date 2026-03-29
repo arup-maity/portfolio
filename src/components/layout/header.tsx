@@ -61,7 +61,8 @@ const PortfoiloHeader = () => {
                   </div>
                   <div className="flex items-center">
                      <Link
-                        href="/"
+                        href="/resume/arup-maity-resume.pdf"
+                        download
                         className="inline-flex items-center gap-1 bg-[#577BFF] text-white text-base lg:text-lg font-lato font-medium tracking-wider leading-7 rounded-[30px] py-2 px-5 lg:py-3 lg:px-8">
                         Download CV <GoArrowUpRight size={25} />
                      </Link>
