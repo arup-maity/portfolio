@@ -29,23 +29,23 @@ const PortfoiloHeader = () => {
                               Home
                            </Link>
                         </li>
-                        <li className="tracking-[1px]">
+                        {/* <li className="tracking-[1px]">
                            <Link
                               href="/"
                               className={`${path === "about" ? "text-theme-color" : "text-theme-black"} hover:text-theme-color text-lg font-lato font-semibold`}>
                               About
                            </Link>
-                        </li>
+                        </li> */}
                         <li className="tracking-[1px]">
                            <Link
-                              href="/"
+                              href="#skills"
                               className={`${path === "blog" ? "text-theme-color" : "text-theme-black"} hover:text-theme-color text-lg font-lato font-semibold`}>
                               Skills
                            </Link>
                         </li>
                         <li className="tracking-[1px]">
                            <Link
-                              href="/"
+                              href="#projects"
                               className={`${path === "services" ? "text-theme-color" : "text-theme-black"} hover:text-theme-color text-lg font-lato font-semibold`}>
                               Projects
                            </Link>
@@ -63,7 +63,7 @@ const PortfoiloHeader = () => {
                      <Link
                         href="/resume/arup-maity-resume.pdf"
                         download
-                        className="inline-flex items-center gap-1 bg-[#577BFF] text-white text-base lg:text-lg font-lato font-medium tracking-wider leading-7 rounded-[30px] py-2 px-5 lg:py-3 lg:px-8">
+                        className="inline-flex items-center gap-1 bg-[#577BFF] text-white text-base lg:text-lg font-lato font-medium tracking-wider leading-7 rounded-[30px] py-1.5 px-5 lg:py-2 lg:px-8">
                         Download CV <GoArrowUpRight size={25} />
                      </Link>
                   </div>

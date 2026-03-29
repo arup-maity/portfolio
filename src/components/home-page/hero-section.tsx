@@ -78,10 +78,10 @@ const HeroSections = () => {
                </div>
             </div>
          </div>
-         <div className="absolute -bottom-7 left-[10%] animate-bounce z-10">
+         <div className="absolute -bottom-7 left-[10%] animate-bounce z-10" style={{ animationDuration: "4s" }}>
             <Image src="/bnr-szape3.png" width={25} height={40} alt="" className="w-6 !h-auto" />
          </div>
-         <div className="absolute top-[13%] right-[13%] z-10 animate-bounce" style={{ animationDuration: "4s" }}>
+         <div className="absolute top-[12%] right-[13%] z-10 animate-bounce" style={{ animationDuration: "4s" }}>
             <Image src="/arow.png" width={150} height={100} alt="" className="!h-auto rotate-180" />
          </div>
       </div>
