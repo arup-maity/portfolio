@@ -1,34 +1,45 @@
-'use client'
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+"use client";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 const HeroSections = () => {
-   const [text, setText] = useState('Web Developer');
+   const [text, setText] = useState("Web Developer");
+   const [isDeleting, setIsDeleting] = useState(false);
+   const [loopNum, setLoopNum] = useState(0);
+   const [typingSpeed, setTypingSpeed] = useState(150);
 
    useEffect(() => {
-      const texts = [
-         'Web Developer',
-         'MERN Developer',
-         'App Developer',
-         'Full Stack Developer',
-      ];
-      let index = 0;
+      const texts = ["Web Developer", "MERN Developer", "Full Stack Developer"];
 
-      const changeText = () => {
-         setText(texts[index]);
-         index = (index + 1) % texts.length; // Move to the next text, looping back to the start
+      const handleTyping = () => {
+         const currentText = texts[loopNum % texts.length];
+         const updatedText = isDeleting ? currentText.substring(0, text.length - 1) : currentText.substring(0, text.length + 1);
+
+         setText(updatedText);
+
+         if (!isDeleting && updatedText === currentText) {
+            // Finished typing, wait before deleting
+            setTimeout(() => setIsDeleting(true), 1500);
+            setTypingSpeed(100); // Faster when deleting
+         } else if (isDeleting && updatedText === "") {
+            // Finished deleting, move to next text
+            setIsDeleting(false);
+            setLoopNum(loopNum + 1);
+            setTypingSpeed(150); // Normal typing speed
+         } else {
+            // Continue typing/deleting
+            setTypingSpeed(isDeleting ? 50 : 150);
+         }
       };
 
-      const intervalId = setInterval(changeText, 2000); // Change text every 2 seconds
+      const timeoutId = setTimeout(handleTyping, typingSpeed);
 
-      // Clean up the interval on component unmount
-      return () => clearInterval(intervalId);
-   }, []);
+      // Clean up the timeout on component unmount
+      return () => clearTimeout(timeoutId);
+   }, [text, isDeleting, loopNum, typingSpeed]);
 
    return (
-      <div
-         className="relative h-screen bg-center bg-no-repeat bg-cover"
-         style={{ backgroundImage: "url(/square.png)" }}>
+      <div className="relative  bg-center bg-no-repeat bg-cover py-40" style={{ backgroundImage: "url(/square.png)" }}>
          <div className="container-webx h-full flex items-center">
             <div className="w-full lg:w-8/12">
                <div className="text-black flex flex-col justify-center max-md:pt-20">
@@ -37,8 +48,9 @@ const HeroSections = () => {
                      Creative <span className="text-[#577BFF]">{text}</span>
                   </h2>
                   <p className="text-base font-lato font-medium text-[#a2a2a2] break-normal mb-10 md:mb-20">
-                     I&apos;m a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I
-                     specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
+                     I&apos;m a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong
+                     foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly
+                     interfaces that captivate and engage.
                   </p>
                   <div className="text-black">
                      <p className="text-base font-medium text-theme-black opacity-60 mb-4 tracking-widest">BEST SKILL ON</p>
@@ -66,14 +78,14 @@ const HeroSections = () => {
                </div>
             </div>
          </div>
-         <div className="absolute -bottom-7 left-[10%] animate-bounce z-10">
-            <Image src='/bnr-szape3.png' width={25} height={40} alt='' className='w-6 !h-auto' />
+         <div className="absolute -bottom-7 left-[10%] animate-bounce z-10" style={{ animationDuration: "4s" }}>
+            <Image src="/bnr-szape3.png" width={25} height={40} alt="" className="w-6 !h-auto" />
          </div>
-         <div className="absolute top-[10%] right-[13%] z-10">
-            <Image src='/arow.png' width={150} height={100} alt='' className='!h-auto rotate-180' />
+         <div className="absolute top-[12%] right-[13%] z-10 animate-bounce" style={{ animationDuration: "4s" }}>
+            <Image src="/arow.png" width={150} height={100} alt="" className="!h-auto rotate-180" />
          </div>
       </div>
-   )
-}
+   );
+};
 
-export default HeroSections
+export default HeroSections;
